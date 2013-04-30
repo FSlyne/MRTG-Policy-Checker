@@ -1,0 +1,26 @@
+Domain  Parameter	Platform	Dir	RRD	Graph	Scale	Blue	Green	Amber	Red	Actual
+Mail	Queue Size	Cumul	qmail/cumul	cumul.queuesize.rrd	1	1	0	500000	750000	1000000	674812.46
+Mail	Unprocessed Messages	Cumul	qmail/cumul	cumul.todo.rrd	1	1	0	50	100	1000	0.97
+Mail	SMTP active connections	Cumul	qmail/cumul	cumul.conns.rrd	1	1	0	1250	10000	12500	2685.9
+Mail	POP active connections	Cumul	qmail/cumul	cumul.conns.rrd	0	1	0	250	2000	3000	2685.9
+Mail	POP Proxy Auth OK	Cumul	qmail/cumul	cumul.ppauthok.rrd	1	1	5000	10000	30000	40000	27700
+Website	Hits	Home	contentcache/cumul	contentcachecumul.hits.rrd	1	1	0	125	1000	2000	644.09
+Website	Contentcache apacheload	Cumul	contentcache/cumul	contentcachecumul.wwwload.rrd	1	1	0	0	4000	6000	7000
+Website	Contentcache apachetraffic (kB/s)	Cumul	contentcache/cumul	contentcachecumul.traffic.rrd	1	1	0	500	6000	10000	4598.33
+Website	Contentcache apachebusy/idle servers	Cumul	contentcache/cumul	contentcachecumul.servers.rrd	1	1	0	150	700	1000	819.87
+Radius	Total Authentication Requests (successes)	Cumul	radius/cumul_radiusdsl	cumul_radiusdsl.successes.rrd	1	0.00333	0	20000	50000	80000	21131.86
+Radius	Total Authentication Requests (failures)	Cumul	radius/cumul_radiusdsl	cumul_radiusdsl.failures.rrd	2	0.00333	0	0	400	750	21131.1
+Radius	Total Authentication Requests (user unknown)	Cumul	radius/cumul_radiusdsl	cumul_radiusdsl.unknown.rrd	2	0.00333	0	10	9000	13000	21130.35
+Radius	Udp errors per minute	Cumul	radius/cumul_radiusdsl	cumul_radiusdsl.udperrs.rrd	1	0.00333	0	0	4000	6000	0
+DNS	IntcacheXX (CRA & CWM) - BIND IPv4 requests received (5min total)	Cumul	dns-bind/cumul-dns	intcachexx.bind.request.rrd	1	1	0	4000	6000	8001	450.66
+DNS	IntcacheXX (CRA & CWM) - BIND Queries resulted in NXDOMAIN	Cumul	dns-bind/cumul-dns	intcachexx.bind.nxdomain1.rrd	1	1	0	0	1000	1501	450.66
+DNS	ExtcacheXX (CRA & CWM) - BIND IPv4 requests received (5min total)	Cumul	dns-bind/cumul-dns	extcachexx.cracwm.bind.request.rrd	1	1	0	2000	50000	100000	15421.89
+DNS	ExtcacheXX (CRA & CWM) - BIND Queries resulted in NXDOMAIN	Cumul	dns-bind/cumul-dns	extcachexx.cracwm.bind.nxdomain1.rrd	1	1	0	1000	50000	100000	2248.6
+DNS	(CRA SLB ADX) - BIND IPv4 requests received (5min total)	Cumul	dns-bind/cumul-dns	extcachexx.craslb.bind.request.rrd	1	1	0	2000	50000	100000	3903.54
+DNS	(CRA SLB ADX) - BIND Queries resulted in NXDOMAIN	Cumul	dns-bind/cumul-dns	extcachexx.craslb.bind.nxdomain1.rrd	1	1	0	300	20000	40000	436.49
+DNS	(CWM SLB ADX) - BIND IPv4 requests received (5min total)	Cumul	dns-bind/cumul-dns	extcachexx.cwmslb.bind.request.rrd	1	1	0	500	50000	100000	7177.53
+DNS	(CWM SLB ADX) - BIND Queries resulted in NXDOMAIN	Cumul	dns-bind/cumul-dns	extcachexx.cwmslb.bind.nxdomain1.rrd	1	1	0	2000	20000	40000	1184.02
+AVAS	Spam Blocked	Cumul	avas/avascumul	avascumul.spamblock.rrd	1	1	0	200	800	1600	133
+AVAS	Virus Blocked	Cumul	avas/avascumul	avascumul.virus.rrd	1	1	0	0	10	100	7.14
+AVAS	Msg In and Out	Cumul	avas/avascumul	avascumul.msgs.rrd	1	1	0	300	800	1400	441.61
+Setanta	Active Stream Count	Cumul	setanta/setantaaccess00	setantaaccess00.activestream.rrd	1	1	0	5	4000	5600	0.02
